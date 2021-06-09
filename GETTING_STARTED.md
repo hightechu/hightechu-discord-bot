@@ -151,7 +151,7 @@ To learn more about Firebase and JavaScript visit the [documentation](https://fi
 - [ ] Setup Config Variables. Add the variables in the `.env` file to Heroku. For more information, visit "[Config Vars - Using the Heroku Dashboard](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard)".
 - [ ] Config Dynos. Turn off the `web` dyno and turn on the `worker` dyno.
 
-![Dyno Example](./dyno-config-example.png)
+![Dyno Example](./docs/images/dyno-config-example.png)
 
 Note: You will want to turn off the `worker` dyno when you are not using your Discord Bot. A free account has 550 free dyno hours each month, therefore use your hours appropriately.
 
