@@ -14,15 +14,15 @@ The HighTechU Discord Bot uses the following technologies: Discord.js, Node.js, 
 
 ## Getting Started
 
-To get started with the project visit the `[getting started](GETTING_STARTED.md)` documentation. The document will outline how to get a copy running locally and how to setup the discord bot.
+To get started with the project visit the [`getting started`](GETTING_STARTED.md) documentation. The document will outline how to get a copy running locally and how to setup the discord bot.
 
 ## Contributing
 
 Contributions are always welcome!
 
-See `[CONTRIBUTING](.github/CONTRIBUTING.md)` for ways to get started.
+See [`CONTRIBUTING`](.github/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's `[code of conduct](CODE_OF_CONDUCT.md)`.
+Please adhere to this project's [`code of conduct`](CODE_OF_CONDUCT.md).
 
 ## Documentation
 
