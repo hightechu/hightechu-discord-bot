@@ -1,0 +1,19 @@
+/* Custom CSS */
+
+/* Header */
+header {
+  padding: 0 0.25rem;
+}
+
+/* Bootstrap Fix */
+.row {
+  padding: 0 1.25rem;
+}
+
+/* Main Content */
+.content {
+  padding: 2.5rem 0;
+}
+h3 {
+  color: #8546b5;
+}
