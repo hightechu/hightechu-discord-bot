@@ -66,13 +66,13 @@ Step 6: Open the project in your preferred code editor.
 
 ## Setup Configuration
 
-Before you can start with the project you will need to configure the environment variables. However, we do not currently have our configuration variables. But we can setup the files now so that we can add the variables throughout the guide.
+Before you can start with the project you will need to configure the environment variables. However, we do not currently have our configuration variables. But we can setup the files now so that we can add the configuration variables to the `.env` file throughout the guide.
 
 - [ ] Create an `.env` file based on `.env.example`. It should include all the content of `.env.example`.
 
-We will be adding our secrets from Discord and Firebase into this file, and the file will not be uploaded to Git, therefore your secrets will stay secret.
+We will be adding our secrets from Discord and Firebase into this file, and the file will not be uploaded to Git or GitHub, therefore your secrets will stay secret.
 
-Note: The `.env` file will only be available in your local development environment. This means that each person working on the project will need to create their own `.env` file with the appropriate contents.
+Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents. If you are working as a team, each person will need their own `.env` file, but the contents (the configuration variables) will be the same for everyone on the team.
 
 ## Account Requirements
 
