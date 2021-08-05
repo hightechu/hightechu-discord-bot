@@ -16,7 +16,7 @@ Note: If you are using an online text editor / integrated development environmen
 
 ## Setup the Project in A Development Environment
 
-Note: You will need a GitHub account and read access to the project repository.
+Note: You will need a GitHub account and read access to the project repository. If you are a HighTechU Student, you will likely have read access to your teams project repository.
 
 Note: You may want to fork the repository first if you do not have write access to the project. For more information, visit "[Fork a repo](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo)".
 
@@ -27,7 +27,7 @@ Step 1: Open the terminal or command prompt and navigate to your development dir
   cd your-development-folder
 ```
 
-Step 2: Clone the project locally.
+Step 2: Clone the project locally. For more information, visit "[Cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository#cloning-a-repository)".
 
 ```bash
   # URL: Check which repository you are trying to clone. It may not be the one in the example below.
@@ -43,7 +43,11 @@ Step 3: Navigate to the project directory.
 
 Step 4: Switch to a new branch from `main`.
 
+Note: It is important to not work directly in the `main` branch. The `main` branch should remain stable and free of errors.
+
 ```bash
+  # Replace <branch_name> with the name of your new branch. 
+  # Example: git checkout -b really-awesome-feature
   git checkout -b <branch_name>
 ```
 
