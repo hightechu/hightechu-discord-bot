@@ -16,7 +16,7 @@ Note: If you are using an online text editor / integrated development environmen
 
 ## Setup the Project in A Development Environment
 
-Note: You will need a GitHub account and read access to the project repository. If you are a HighTechU Student, you will likely have read access to your teams project repository.
+Note: You will need a GitHub account and read/write access to the project repository. If you are a HighTechU Student, you will likely have read/write access to your teams project repository.
 
 Note: You may want to fork the repository first if you do not have write access to the project. For more information, visit "[Fork a repo](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo)".
 
