@@ -83,7 +83,7 @@ Note: HighTechU Students working in a team will each need their own `.env` file,
 To proceed with this project, you will need to have an account with the following services: Discord, Firebase, and Heroku.
 
 Notes:
-* HighTechU Students working in a team will only require 1 account per team for Firebase and Heroku.
+* HighTechU Students working in a team will require only 1 account per team for Firebase and Heroku.
 * HighTechU Students working in a team will each need their own Discord account. But only 1 team member will need to setup the Discord Server and the Discord Bot. Thus, you will need to designate 1 team member to manage the accounts, and provide the configuration variables.
 
 ### Discord - Personal
