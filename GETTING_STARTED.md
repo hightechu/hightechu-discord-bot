@@ -184,6 +184,10 @@ Note: The `worker` dyno will be re-deployed every time the `main` branch is upda
 
 You will be able to deploy your Discord Bot locally. This is helpful for testing that your code works before adding it to the GitHub Repository. You always want to make sure your code works as intended before merging to the `main` branch.
 
+Note: You will need to setup your own Discord Bot and add the Discord Bot to the team server to develop locally. You can, however, share the Firebase configuration variables.
+
+> Setting up your own Discord Bot to develop locally is critical to preventing a bug where the bot runs commands multiple times.
+
 Note: You will need your `.env` file correctly configured with the configuration variables to deploy locally.
 
 Step 1: Start the server.
@@ -200,12 +204,23 @@ These are optional configuration that you can perform to customize your Discord 
 
 You can update the prefix for interacting with your Discord Bot. Currently to interact with the Discord Bot you would type `!command`. However, you can instead configure the interaction to be `!bot command`. This is helpful if you have multiple Discord Bots in a server.
 
+Note: HighTechU Students working in a team will want to change the Discord Bot prefix for each Bot in the server.
+
 Step 1: Update the prefix in the `config.json` file.
 
 ```bash
 # Prefix for Summoning your Discord Bot
 {
   "prefix": "!"
+}
+```
+
+or
+
+```bash
+# Prefix for Summoning your Discord Bot
+{
+  "prefix": "!bot "
 }
 ```
 
@@ -216,6 +231,8 @@ The Discord Bot is setup with a Heroku Application that automatically deploys th
 ## Testing Bot
 
 To test your setup, you can run the command `!ping` in your server. The Discord Bot will respond `Pong!` if your setup was a success.
+
+Note: If you changed your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`. 
 
 Note: This applies to both locally developed Discord Bot and Heroku developed Discord Bot.
 
