@@ -2,7 +2,7 @@
 
 This guide will help you get started with the project. It will also help you set up your own version of the HighTechU Discord Bot.
 
-**Please remember that we are available at every step of the process. Let us know if you need help!**
+**Please remember that we are available to help at every step of the process. Let us know if you need help!**
 
 ## Development
 
@@ -16,9 +16,11 @@ Note: If you are using an online text editor / integrated development environmen
 
 ## Setup the Project in A Development Environment
 
-Note: You will need a GitHub account and read/write access to the project repository. If you are a HighTechU Student, you will likely have read/write access to your teams project repository.
+You will need a GitHub account and read/write access to the repository. 
 
-Note: You may want to fork the repository first if you do not have write access to the project. For more information, visit "[Fork a repo](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo)".
+Note: HighTechU Students working in a team will have read/write access to your teams project repository.
+
+Note: You may want to fork the repository first if you do not have read/write access to the repository. For more information, visit "[Fork a repo](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo)".
 
 Step 1: Open the terminal or command prompt and navigate to your development directory.
 
@@ -43,7 +45,7 @@ Step 3: Navigate to the project directory.
 
 Step 4: Switch to a new branch from `main`.
 
-Note: It is important to not work directly in the `main` branch. The `main` branch should remain stable and free of errors.
+Note: It is important that developers do not work directly in the `main` branch. The `main` branch should remain stable.
 
 ```bash
   # Replace <branch_name> with the name of your new branch. 
@@ -66,28 +68,42 @@ Step 6: Open the project in your preferred code editor.
 
 ## Setup Configuration
 
-Before you can start with the project you will need to configure the environment variables. However, we do not currently have our configuration variables. But we can setup the files now so that we can add the configuration variables to the `.env` file throughout the guide.
+Before you can start with the project you will need to configure the environment variables. However, at this point in the guide we do not have our configuration variables. But we can setup the file now so that we can add the configuration variables to the `.env` file throughout the guide.
 
 - [ ] Create an `.env` file based on `.env.example`. It should include all the content of `.env.example`.
 
 We will be adding our secrets from Discord and Firebase into this file, and the file will not be uploaded to Git or GitHub, therefore your secrets will stay secret.
 
-Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents. If you are working as a team, each person will need their own `.env` file, but the contents (the configuration variables) will be the same for everyone on the team.
+Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents. 
+
+Note: HighTechU Students working in a team will each need their own `.env` file, but the contents (the configuration variables) will be the same for everyone on the team.
 
 ## Account Requirements
 
 To proceed with this project, you will need to have an account with the following services: Discord, Firebase, and Heroku.
 
-### Discord
+Notes:
+* HighTechU Students working in a team will only require 1 account per team for Firebase and Heroku.
+* HighTechU Students working in a team will each need their own Discord account. But only 1 team member will need to setup the Discord Server and the Discord Bot. Thus, you will need to designate 1 team member to manage the accounts, and provide the configuration variables.
+
+### Discord - Personal
 
 - [ ] Setup a Discord Account. For more information, visit "[Discord Getting Started](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started)".
 - [ ] Download Discord. For more information, visit "[Download Discord](https://discord.com/download)".
+
+### Discord - Server
+
 - [ ] Setup a Discord Server. For more information, visit "[Create A Server](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-)".
+  - [ ] HighTechU Students: Invite your team members to the Discord Server. For more information, visit "[How do I invite friends to my server](https://support.discord.com/hc/en-us/articles/204155938-How-do-I-invite-friends-to-my-server-)".
+  - [ ] HighTechU Students: Update your team members server permission. For more information, visit "[Setting Up Permissions FAQ](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ)".
+
+### Discord - Bot
+
 - [ ] Setup a Discord Bot. For more information, visit "[Setting Up a Bot Application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)". (Note: This guide is provided by Discord.js. Please only read the provided linked section).
 - [ ] Add your Discord Bot to your server. For more information, visit "[Adding a Bot to Servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)". (Note: This section requires your bot application's client ID. Please read the entire section carefully).
 - [ ] Add your Discord Bot Token to `.env`. Obtain your bot token from the Discord Portal. For more information, visit "[Your Token](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token)".
 
-Add your Bot Token to the `TOKEN` variable. Do not add any spaces between the variable name (`TOKEN`) and the `=`.
+Add your Bot Token to the `TOKEN` configuration variable. Do not add any spaces between the configuration variable name (`TOKEN`) and the `=`.
 
 `.env`
 ```bash
@@ -101,7 +117,7 @@ TOKEN=YOUR_VERY_SECRET_BOT_TOKEN
 - [ ] Create a Cloud Firestore within your Firebase Project. For more information, visit "[Firestore](https://firebase.google.com/docs/firestore)".
 - [ ] Obtain your Firebase Project Config Variables. For more information, visit "[Config Object](https://firebase.google.com/docs/web/setup#config-object)".
 
-Note: The code that will be provided for the Firebase Project Config Variables will be presented in a JavaScript script tag.
+Note: The code that will be provided for the Firebase Project Configuration Variables will be presented in a JavaScript script tag.
 
 ```js
 <script>
@@ -117,7 +133,7 @@ Note: The code that will be provided for the Firebase Project Config Variables w
 </script>
 ```
 
-However, we only want the `SECRET` part. Carefully copy and paste each part into the correct `.env` config variable. Do not add any spaces between the variable name and the `=`.
+However, we only want the `SECRET` part. Carefully copy and paste each part into the correct `.env` configuration variable. Do not add any spaces between the configuration variable name and the `=`.
 
 `.env`
 ```bash
@@ -145,14 +161,14 @@ service cloud.firestore {
 }
 ```
 
-To learn more about Firebase and JavaScript visit the [documentation](https://firebase.google.com/docs/web/setup).
+Note: To learn more about Firebase and JavaScript visit the [documentation](https://firebase.google.com/docs/web/setup).
 
 ### Heroku
 
 - [ ] Set a Heroku Account. For more information, visit "[Heroku](https://www.heroku.com)".
 - [ ] Create a new Heroku Application.
 - [ ] Setup Deployment Method. Use the `Connect to GitHub` method and select the appropriate repository.
-- [ ] Setup Config Variables. Add the variables in the `.env` file to Heroku. For more information, visit "[Config Vars - Using the Heroku Dashboard](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard)".
+- [ ] Setup Configuration Variables. Add the configuration variables in the `.env` file to Heroku. For more information, visit "[Config Vars - Using the Heroku Dashboard](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard)".
 - [ ] Config Dynos. Turn off the `web` dyno and turn on the `worker` dyno.
 
 ![Dyno Example](./docs/images/dyno-config-example.png)
@@ -168,6 +184,8 @@ Note: The `worker` dyno will be re-deployed every time the `main` branch is upda
 
 You will be able to deploy your Discord Bot locally. This is helpful for testing that your code works before adding it to the GitHub Repository. You always want to make sure your code works as intended before merging to the `main` branch.
 
+Note: You will need your `.env` file correctly configured with the configuration variables to deploy locally.
+
 Step 1: Start the server.
 
 ```bash
@@ -180,9 +198,9 @@ These are optional configuration that you can perform to customize your Discord 
 
 ### Prefix
 
-You can update the prefix for interacting with your Discord Bot. Currently to interact with the Discord Bot you would type `!command` however, you can instead configure the interaction to be `!bot command`. This is helpful if you have multiple Discord Bots in a server.
+You can update the prefix for interacting with your Discord Bot. Currently to interact with the Discord Bot you would type `!command`. However, you can instead configure the interaction to be `!bot command`. This is helpful if you have multiple Discord Bots in a server.
 
-Step 1: Update the prefix in `config.json`.
+Step 1: Update the prefix in the `config.json` file.
 
 ```bash
 # Prefix for Summoning your Discord Bot
@@ -198,6 +216,8 @@ The Discord Bot is setup with a Heroku Application that automatically deploys th
 ## Testing Bot
 
 To test your setup, you can run the command `!ping` in your server. The Discord Bot will respond `Pong!` if your setup was a success.
+
+Note: This applies to both locally developed Discord Bot and Heroku developed Discord Bot.
 
 Note: Do not worry if your Discord Bot doesn't respond. Ask for help, and we can troubleshoot together to solve the problem.
 
