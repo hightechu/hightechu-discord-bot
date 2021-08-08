@@ -32,6 +32,8 @@ Please adhere to this project's [`code of conduct`](CODE_OF_CONDUCT.md).
 
 ## Documentation
 
+To get started with the projects website visit the [`getting started website`](GETTING_STARTED_WEBSITE.md) documentation. The document outlines how to get started with your projects website and how to deploy with GitHub Pages.
+
 <!-- You will want to modify the documentation link to reflect your Discord Bot Website -->
 
 [Documentation](https://hightechu.ca)
