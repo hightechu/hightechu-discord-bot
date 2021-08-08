@@ -20,7 +20,7 @@ Note: If you are using an online text editor / integrated development environmen
 
 You will need a GitHub account and read/write access to the repository.
 
-Note: HighTechU Students working in a team will have read/write access to your teams project repository.
+Note: HighTechU Students working in a team will have read/write access to your team's project repository.
 
 Note: You will also need admin access to the repository if you plan on automatically deploying the Discord Bot with Heroku. For more information, visit "[GitHub Integration](https://devcenter.heroku.com/articles/github-integration)".
 
@@ -78,7 +78,7 @@ Note: It is important that developers do not work directly in the `main` branch.
 
 ## Setup Configuration
 
-Before you can start with the project you will need to configure the environment variables. However, at this point in the guide we do not have our configuration variables. But we can setup the file now so that we can add the configuration variables to the `.env` file throughout the guide.
+Before you can start with the project you will need to configure the environment variables. However, at this point in the guide we do not have our configuration variables. But we can set up the file now so that we can add the configuration variables to the `.env` file throughout the guide.
 
 - [ ] Create an `.env` file based on `.env.example`. It should include all the content of `.env.example`.
 
@@ -94,7 +94,7 @@ To proceed with this project, you will need to have an account with the followin
 
 Notes:
 * HighTechU Students working in a team will require only 1 account per team for Firebase and Heroku.
-* HighTechU Students working in a team will each need their own Discord account. But only 1 team member will need to setup the Discord Server and the main Discord Bot. Thus, you will need to designate 1 team member to manage the accounts, and provide the configuration variables.
+* HighTechU Students working in a team will each need their own Discord account. But only 1 team member will need to set up the Discord Server and the main Discord Bot. Thus, you will need to designate 1 team member to manage the accounts, and provide the configuration variables.
 
 ### Discord - Personal
 
@@ -105,7 +105,7 @@ Notes:
 
 - [ ] Setup a Discord Server. For more information, visit "[Create A Server](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-)".
   - [ ] HighTechU Students: Invite your team members to the Discord Server. For more information, visit "[How do I invite friends to my server](https://support.discord.com/hc/en-us/articles/204155938-How-do-I-invite-friends-to-my-server-)".
-  - [ ] HighTechU Students: Update your team members server permission to admin. For more information, visit "[Setting Up Permissions FAQ](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ)".
+  - [ ] HighTechU Students: Update your team members' server permission to admin. For more information, visit "[Setting Up Permissions FAQ](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ)".
 
 ### Discord - Bot
 
@@ -175,7 +175,7 @@ Note: To learn more about Firebase and JavaScript visit the [documentation](http
 
 ### Heroku
 
-Note: HighTechU Students working in a team will need to designate 1 team member to manage the Heroku Application. You will need to inform an instructor of the designated team member. The student will then gain admin access to the teams project repository. This will allow them to setup automatic deployment.
+Note: HighTechU Students working in a team will need to designate 1 team member to manage the Heroku Application. You will need to inform an instructor of the designated team member. The student will then gain admin access to the team's project repository. This will allow them to set up automatic deployment.
 
 - [ ] Set a Heroku Account. For more information, visit "[Heroku](https://www.heroku.com)".
 - [ ] Create a new Heroku Application.
@@ -187,7 +187,7 @@ Note: HighTechU Students working in a team will need to designate 1 team member 
 
 Note: You will want to turn off the `worker` dyno when you are not using your Discord Bot. A free account has 550 free dyno hours each month, therefore use your hours appropriately.
 
-- [ ] Enable Automatic Deploys. For more information, visit "[Automatic deploys](https://devcenter.heroku.com/articles/github-integration#automatic-deploys)".
+- [ ] Enable Automatic Deployments. For more information, visit "[Automatic deploys](https://devcenter.heroku.com/articles/github-integration#automatic-deploys)".
 - [ ] Deploy the `main` Branch Manually. For more information, visit "[Manual deploys](https://devcenter.heroku.com/articles/github-integration#manual-deploys)".
 
 Note: The `worker` dyno will be re-deployed every time the `main` branch is updated. Therefore, check that your app runs locally before merging your working branch into the `main` branch.
@@ -196,7 +196,7 @@ Note: The `worker` dyno will be re-deployed every time the `main` branch is upda
 
 You will be able to deploy your Discord Bot locally. This is helpful for testing that your code works before adding it to the Git and GitHub Repository. You always want to make sure your code works as intended before merging it to the `main` branch.
 
-Note: You will need to setup your own Discord Bot and add the Discord Bot to the team server to develop locally. You will need to follow the `Discord - Bot` instructions above.
+Note: You will need to set up your own Discord Bot and add the Discord Bot to the team server to develop locally. You will need to follow the `Discord - Bot` instructions above.
 
 > Setting up your own Discord Bot to develop locally is critical for preventing a bug where the bot runs commands multiple times.
 
@@ -212,7 +212,7 @@ Note: HighTechU Students working in a team can share the Firebase configuration 
 
 ## Optional Configuration
 
-These are optional configuration that you can perform to customize your Discord Bot.
+These are optional configurations that you can perform to customize your Discord Bot.
 
 ### Prefix
 
@@ -242,15 +242,15 @@ to
 
 ## Deployment
 
-The Discord Bot is setup with a Heroku Application that automatically deploys the `main` branch on update. Therefore, be careful updating the `main` branch.
+The Discord Bot is set up with a Heroku Application that automatically deploys the `main` branch on update. Therefore, be careful updating the `main` branch.
 
 Note: If you are using the Heroku CLI to manually deploy, you will need to follow the instructions provided by Heroku in the application dashboard. For more information, visit "[Git - For an Existing Heroku App](https://devcenter.heroku.com/articles/git#for-an-existing-heroku-app)".
 
 ## Testing the Bot
 
-To test your setup, you can run the command `!ping` in your server. The Discord Bot will respond `Pong!` if your setup was a success.
+To test your setup, you can run the command `!ping` on your server. The Discord Bot will respond `Pong!` if your setup was a success.
 
-Note: If you changed your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`. 
+Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`. 
 
 > Note: This applies to both locally developed Discord Bot and Heroku developed Discord Bot.
 
