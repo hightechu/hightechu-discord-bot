@@ -24,7 +24,7 @@ Note: HighTechU Students working in a team will have read/write access to your t
 
 Note: You will also need admin access to the repository if you plan on automatically deploying the Discord Bot with Heroku. For more information, visit "[GitHub Integration](https://devcenter.heroku.com/articles/github-integration)".
 
-> Note: HighTechU Students will need to ask an instructor for admin access to their project repository. Notebally, HighTechU Students working in a team will require 1 team member to ask an instructor for admin access.
+> Note: HighTechU Students will need to ask an instructor for admin access to their project repository. Notably, HighTechU Students working in a team will require 1 team member to ask an instructor for admin access.
 
 Note:
 
