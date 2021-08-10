@@ -6,7 +6,7 @@ This guide will help you get started with the project's website.
 
 The project's website will be a landing page for your Discord Bot. Users will be able to add your Discord Bot to their server from the website and be able to view all the available features and commands.
 
-The template website can be viewed [here](https://hightechu.github.io/hightechu-academy-discord-bot/).
+The template website can be viewed [here](https://hightechu.github.io/hightechu-discord-bot/).
 
 You will want to create a website that reflects your Discord Bots Branding.
 

@@ -1,10 +1,10 @@
 # Getting Started Instructors
 
-This guide will help instructors set up the Discord Bot Template for HighTechU Academy's.
+This guide will help instructors set up the Discord Bot Template for HighTechU.
 
 ## Creating the Repository
 
-The HighTechU Academy Discord Bot Repository allows for GitHub users to create a new repository using this repository as a template. For more information, visit "[About repository templates](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template#about-repository-templates)".
+The HighTechU Discord Bot Repository allows for GitHub users to create a new repository using this repository as a template. For more information, visit "[About repository templates](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template#about-repository-templates)".
 
 You will need to name the new repository appropriately, for now you can name it following the convention below:
 
@@ -12,7 +12,7 @@ You will need to name the new repository appropriately, for now you can name it 
 
 The HighTechU Students will rename the repository later when they have created their Discord Bot Branding.
 
-> Note: You will create the new repository as `private`. The repository will become `public` after the academy is finished.
+> Note: You will create the new repository as `private`. The repository will become `public` after the program is finished.
 
 ## Repository Permissions
 
