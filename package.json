@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hightechu/hightechu-academy-discord-bot.git"
+    "url": "git+https://github.com/hightechu/hightechu-discord-bot.git"
   },
   "keywords": [
     "discord",
@@ -19,9 +19,9 @@
   "author": "HighTechU",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hightechu/hightechu-academy-discord-bot/issues"
+    "url": "https://github.com/hightechu/hightechu-discord-bot/issues"
   },
-  "homepage": "https://github.com/hightechu/hightechu-academy-discord-bot#readme",
+  "homepage": "https://github.com/hightechu/hightechu-discord-bot#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
