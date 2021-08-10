@@ -43,14 +43,14 @@ Note:
 
 ```bash
   # URL: Check which repository you are trying to clone. It may not be the one in the example below.
-  git clone https://github.com/hightechu/hightechu-academy-discord-bot.git
+  git clone https://github.com/hightechu/hightechu-discord-bot.git
 ```
 
 ### Step 3: Navigate to the project directory.
 
 ```bash
   # Project Directory: Check the name of your repository. It may not be the one in the example below.
-  cd hightechu-academy-discord-bot
+  cd hightechu-discord-bot
 ```
 
 ### Step 4: Switch to a new branch from `main`.
