@@ -1,4 +1,4 @@
-![HighTechU Academy Discord Bot](./docs/images/hightechu-discord-bot-banner.png)
+![HighTechU Academy Discord Bot](./docs/images/hightechu-discord-bot-04.png)
 <!-- You will want to modify the image above to reflect your Discord Bot Branding. -->
 
 ## About
