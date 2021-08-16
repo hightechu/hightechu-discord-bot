@@ -58,7 +58,7 @@ Note:
 Note: It is important that developers do not work directly in the `main` branch. The `main` branch should remain stable.
 
 ```bash
-  # Replace <branch_name> with the name of your new branch. 
+  # Replace <branch_name> with the name of your new branch.
   # Example: git checkout -b really-awesome-feature
   git checkout -b <branch_name>
 ```
@@ -84,7 +84,7 @@ Before you can start with the project you will need to configure the environment
 
 We will be adding our secrets from Discord and Firebase into this file, and the file will not be uploaded to Git or GitHub, therefore your secrets will stay secret.
 
-Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents. 
+Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents.
 
 > Note: HighTechU Students working in a team will each need their own `.env` file, but the contents (the configuration variables) will be the same for everyone on the team.
 
@@ -111,6 +111,9 @@ Notes:
 
 - [ ] Setup a Discord Bot. For more information, visit "[Setting Up a Bot Application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)". (Note: This guide is provided by Discord.js. Please only read the provided linked section).
 - [ ] Add your Discord Bot to your server. For more information, visit "[Adding a Bot to Servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)". (Note: This section requires your bot application's client ID. Please read the entire section carefully).
+
+> Note: The link will look similar to the following `https://discord.com/api/oauth2/authorize?client_id=123456789012345678&permissions=0&scope=bot%20applications.commands` where `123456789012345678` is your Discord Bots Client ID.
+
 - [ ] Add your Discord Bot Token to `.env`. Obtain your bot token from the Discord Portal. For more information, visit "[Your Token](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token)".
 
 Add your Bot Token to the `TOKEN` configuration variable. Do not add any spaces between the configuration variable name (`TOKEN`) and the `=`.
@@ -222,7 +225,7 @@ Note: HighTechU Students working in a team will want to change the Discord Bot p
 
 ### Step 1: Update the prefix in the `config.json` file.
 
-from 
+from
 
 ```bash
 # Prefix for Summoning your Discord Bot
@@ -246,11 +249,13 @@ The Discord Bot is set up with a Heroku Application that automatically deploys t
 
 Note: If you are using the Heroku CLI to manually deploy, you will need to follow the instructions provided by Heroku in the application dashboard. For more information, visit "[Git - For an Existing Heroku App](https://devcenter.heroku.com/articles/git#for-an-existing-heroku-app)".
 
+Note: If you are using a free Heroku account with no credit card attached, you will only have 550 hours a month of uptime. There are roughly 730.5 hours in a month. Thus, your bot will not be available all the time. Please turn off your bot when not in use, and be aware that your bot will not have 24/7 uptime.
+
 ## Testing the Bot
 
 To test your setup, you can run the command `!ping` on your server. The Discord Bot will respond `Pong!` if your setup was a success.
 
-Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`. 
+Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`.
 
 > Note: This applies to both locally developed Discord Bot and Heroku developed Discord Bot.
 
@@ -259,6 +264,21 @@ Note: If you change your Discord Bot prefix, the command will no longer be `!pin
 Do not worry if your Discord Bot doesn't respond. Ask for help, and we can troubleshoot together to solve the problem. Check that your Discord Bot is running either locally (`npm run start`) or on Heroku. The Discord Bot will not work unless it is actively running.
 
 Note: The Discord Bot must be added to your server, if it isn't added it can't listen and respond to commands.
+
+## Additional Information
+
+### Template Commands
+
+The HighTechU Discord Bot has a few template commands...
+
+- !ping: A command that responds to the user.
+- !beep: A command that responds to the user and adds an emoji to their message.
+- !chart [YYYY-MM-DD]: A command that responds to the user and uses an external API and Discord Embed.
+- !hightechu: A command that responds to the user and uses Discord Embed.
+- !help: A command to list all commands.
+- !reload: A command that reloads a command during local development.
+- !add-element [element]: A command that responds to the user and adds the element to Firebase.
+- !view-elements: A command that responds to the user with all their Firebase elements.
 
 ## Conclusion
 

@@ -11,6 +11,7 @@ node_modules/
 
 # dotenv Environment Variables File
 .env
+*.env
 
 # macOS
 .DS_STORE

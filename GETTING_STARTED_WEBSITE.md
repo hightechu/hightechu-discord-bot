@@ -1,6 +1,6 @@
 # Getting Started Website
 
-This guide will help you get started with the project's website. 
+This guide will help you get started with the project's website.
 
 ## More Information
 
@@ -32,7 +32,7 @@ To develop the website, you will need to clone the repository into your developm
 
 After setting up your development environment...
 
-- [ ] Navigate to the `./docs` folder. 
+- [ ] Navigate to the `./docs` folder.
 - [ ] Open the `index.html` file in your preferred browser (i.e. double click on the file, or right-click - and choose "Open with").
 
 You will now be able to start developing your projects website.
