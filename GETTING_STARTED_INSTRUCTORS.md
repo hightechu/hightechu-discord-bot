@@ -2,6 +2,16 @@
 
 This guide will help instructors set up the Discord Bot Template for HighTechU.
 
+## Adding Students to the HighTechU GitHub Organization
+
+You will need to invite each HighTechU Student to the HighTechU GitHub Organization. For more information, visit "[Inviting users to join your organization](https://docs.github.com/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization)".
+
+> Note: It is important that HighTechU Students accept the invitation to join the orgnization to prevent access issues.
+
+## Adding Students to the HighTechU Team
+
+You will need to add each student to the appropriate team. Usually this team will reflect the current cohort. (For example, `Academy`). For more information, visit "[Adding organization members to a team](https://docs.github.com/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)".
+
 ## Creating the Repository
 
 The HighTechU Discord Bot Repository allows for GitHub users to create a new repository using this repository as a template. For more information, visit "[About repository templates](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template#about-repository-templates)".
@@ -24,7 +34,7 @@ You will want to set up "Require pull request reviews before merging", "Required
 
 ## Repository Access
 
-You will need to add each HighTechU Student to the repository. You will initially give them read and write access.
+You will need to add each HighTechU Student to the repository (OR alternatively add the appropriate team). You will initially give them read and write access.
 
 > Note: You will need to give 1 HighTechU Student admin access so that they can set up automatic deploy with GitHub on Heroku.
 
@@ -32,7 +42,7 @@ For more information about repository access for individuals, visit "[Managing a
 
 You will need to add the HighTechU Staff Team to the repository. You will give them admin access.
 
-You will need to add the HighTechU Mentor Team to the repository. You will give them read and write access.
+You will need to add the HighTechU Mentors Team to the repository. You will give them read and write access.
 
 For more information about repository access for teams, visit "[Managing team access to an organization repository](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/managing-team-access-to-an-organization-repository)".
 
