@@ -6,7 +6,7 @@ This guide will help instructors set up the Discord Bot Template for HighTechU.
 
 You will need to invite each HighTechU Student to the HighTechU GitHub Organization. For more information, visit "[Inviting users to join your organization](https://docs.github.com/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization)".
 
-> Note: It is important that HighTechU Students accept the invitation to join the orgnization to prevent access issues.
+> Note: It is important that HighTechU Students accept the invitation to join the organization to prevent access issues.
 
 ## Adding Students to the HighTechU Team
 
@@ -30,7 +30,7 @@ You will want to restrict the `main` branch. You will need to create a branch pr
 
 You will want to set up "Require pull request reviews before merging", "Required approving reviews: 1", and "Require review from Code Owners".
 
-> Note: This is a crucial step! It is very important to limit HighTechU Students ability to push code to the `main` branch without review. This is to avoid broken code, publishing secrets, adding empty files, conflicts, and inapropriate contributions.
+> Note: This is a crucial step! It is very important to limit HighTechU Students ability to push code to the `main` branch without review. This is to avoid broken code, publishing secrets, adding empty files, conflicts, and inappropriate contributions.
 
 > Note: This means that developers cannot push to the `main` branch and that developers will need to develop on a separate branch and create a Pull Request. The information about Pull Request Workflow can be found in [CONTRIBUTING.md](./.github/CONTRIBUTING.md).
 
