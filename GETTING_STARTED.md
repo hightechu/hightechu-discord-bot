@@ -265,6 +265,21 @@ Do not worry if your Discord Bot doesn't respond. Ask for help, and we can troub
 
 Note: The Discord Bot must be added to your server, if it isn't added it can't listen and respond to commands.
 
+## Additional Information
+
+### Template Commands
+
+The HighTechU Discord Bot has a few template commands...
+
+- !ping: A command that responds to the user.
+- !beep: A command that responds to the user and adds an emoji to their message.
+- !chart [YYYY-MM-DD]: A command that responds to the user and uses an external API and Discord Embed.
+- !hightechu: A command that responds to the user and uses Discord Embed.
+- !help: A command to list all commands.
+- !reload: A command that reloads a command during local development.
+- !add-element [element]: A command that responds to the user and adds the element to Firebase.
+- !view-elements: A command that responds to the user with all their Firebase elements.
+
 ## Conclusion
 
 You can now start developing. If you have any questions, feel free to ask. We want you to succeed!
