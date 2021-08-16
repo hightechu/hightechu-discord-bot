@@ -12,7 +12,7 @@ Each HighTechU Student will play an important role in the creation of your Disco
 
 ### Admin Member
 
-The admin member is in charge creating the Discord Server, Discord Bot and setting up GitHub Pages, Heroku, and Firebase. This team member should be confident in their skills to manage accounts and distributing important information to teammates.
+The admin member is in charge of creating the Discord Server, Discord Bot and setting up GitHub Pages, Heroku, and Firebase. This team member should be confident in their skills to manage accounts and distribute important information to teammates.
 
 ### Web Developer Member
 
@@ -24,7 +24,7 @@ The bot developer member is in charge of modifying and updating/adding code for 
 
 ### Business Member
 
-The business member is in charge of cultivating the minumum viable product of the Discord Bot into a digestible format. They will help create the Discord Bot Pitch and help delagete tasks and priorities.
+The business member is in charge of cultivating the minimum viable product of the Discord Bot into a digestible format. They will help create the Discord Bot Pitch and help delegate tasks and priorities.
 
 ## Conclusion
 
@@ -32,7 +32,7 @@ Each HighTechU Student will assume one or more roles in order to contribute to t
 
 > Note: There can be more than one web developer, bot developer, and business member in each team.
 > 
-> HighTechU Students can also assume more than one role. Feel free to expirement with different roles. This is a learning experience!
+> HighTechU Students can also assume more than one role. Feel free to experiment with different roles. This is a learning experience!
 
 ## Support
 
