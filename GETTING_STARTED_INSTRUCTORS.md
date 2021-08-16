@@ -10,7 +10,7 @@ You will need to invite each HighTechU Student to the HighTechU GitHub Organizat
 
 ## Adding Students to the HighTechU Team
 
-You will need to add each student to the appropriate team. Usually this team will reflect the current cohort. (For example, `Academy`). For more information, visit "[Adding organization members to a team](https://docs.github.com/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)".
+You will need to add each HighTechU Student to the appropriate team. Usually this team will reflect the current cohort. (For example, `Academy`). For more information, visit "[Adding organization members to a team](https://docs.github.com/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)".
 
 ## Creating the Repository
 
