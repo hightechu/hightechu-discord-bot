@@ -28,7 +28,9 @@ The HighTechU Students will rename the repository later when they have created t
 
 You will want to restrict the `main` branch. You will need to create a branch protection rule. For more information, visit "[Creating a branch protection rule](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule#creating-a-branch-protection-rule)".
 
-You will want to set up "Require pull request reviews before merging", "Required approving reviews: 1", and "Require review from Code Owners". 
+You will want to set up "Require pull request reviews before merging", "Required approving reviews: 1", and "Require review from Code Owners".
+
+> Note: This is a crucial step! It is very important to limit HighTechU Students ability to push code to the `main` branch without review. This is to avoid broken code, publishing secrets, adding empty files, conflicts, and inapropriate contributions.
 
 > Note: This means that developers cannot push to the `main` branch and that developers will need to develop on a separate branch and create a Pull Request. The information about Pull Request Workflow can be found in [CONTRIBUTING.md](./.github/CONTRIBUTING.md).
 
