@@ -58,7 +58,7 @@ Note:
 Note: It is important that developers do not work directly in the `main` branch. The `main` branch should remain stable.
 
 ```bash
-  # Replace <branch_name> with the name of your new branch. 
+  # Replace <branch_name> with the name of your new branch.
   # Example: git checkout -b really-awesome-feature
   git checkout -b <branch_name>
 ```
@@ -84,7 +84,7 @@ Before you can start with the project you will need to configure the environment
 
 We will be adding our secrets from Discord and Firebase into this file, and the file will not be uploaded to Git or GitHub, therefore your secrets will stay secret.
 
-Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents. 
+Note: The `.env` file will only be available in your local development environment. This means that each person working on the same project will need to create their own `.env` file with the appropriate contents.
 
 > Note: HighTechU Students working in a team will each need their own `.env` file, but the contents (the configuration variables) will be the same for everyone on the team.
 
@@ -225,7 +225,7 @@ Note: HighTechU Students working in a team will want to change the Discord Bot p
 
 ### Step 1: Update the prefix in the `config.json` file.
 
-from 
+from
 
 ```bash
 # Prefix for Summoning your Discord Bot
@@ -255,7 +255,7 @@ Note: If you are using a free Heroku account with no credit card attached, you w
 
 To test your setup, you can run the command `!ping` on your server. The Discord Bot will respond `Pong!` if your setup was a success.
 
-Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`. 
+Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`.
 
 > Note: This applies to both locally developed Discord Bot and Heroku developed Discord Bot.
 

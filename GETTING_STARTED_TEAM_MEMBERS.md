@@ -7,7 +7,7 @@ This guide will outline the suggested team structure for the HighTechU Discord B
 Each HighTechU Student will play an important role in the creation of your Discord Bot. Below you will find a list of roles and their respective tasks.
 
 > Note: Each team will need at least 1 member per role. You may occupy more than 1 role, but every team member must contribute to the project!
-> 
+>
 > The admin role is the only role where only 1 team member is required.
 
 ### Admin Member
@@ -31,7 +31,7 @@ The business member is in charge of cultivating the minimum viable product of th
 Each HighTechU Student will assume one or more roles in order to contribute to the project.
 
 > Note: There can be more than one web developer, bot developer, and business member in each team.
-> 
+>
 > HighTechU Students can also assume more than one role. Feel free to experiment with different roles. This is a learning experience!
 
 ## Support
