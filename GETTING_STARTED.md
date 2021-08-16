@@ -249,6 +249,8 @@ The Discord Bot is set up with a Heroku Application that automatically deploys t
 
 Note: If you are using the Heroku CLI to manually deploy, you will need to follow the instructions provided by Heroku in the application dashboard. For more information, visit "[Git - For an Existing Heroku App](https://devcenter.heroku.com/articles/git#for-an-existing-heroku-app)".
 
+Note: If you are using a free Heroku account with no credit card attached, you will only have 550 hours a month of uptime. There is roughly 730.5 hours in a month. Thus, your bot will not be available all the time. Please turn off your bot when not in use, and be aware that your bot will not have 24/7 uptime.
+
 ## Testing the Bot
 
 To test your setup, you can run the command `!ping` on your server. The Discord Bot will respond `Pong!` if your setup was a success.
