@@ -203,6 +203,8 @@ Note: You will want to turn off the `worker` dyno when you are not using your Di
 
 - [ ] Re-Deploy the `main` Branch. For more information, visit "[Manual deploys](https://devcenter.heroku.com/articles/github-integration#manual-deploys)".
 
+---
+
 > Note: The `worker` dyno will be re-deployed every time the `main` branch is updated. Therefore, check that your app runs locally before merging your working branch into the `main` branch.
 
 ## Locally Deploy
@@ -312,6 +314,7 @@ The HighTechU Discord Bot has a few template commands...
 - !reminder: A command that reminds the user of their reminder every x minutes.
 - !help: A command to list all commands.
 - !reload: A command that reloads a command during local development.
+- !r: A command that reloads all commands during local development.
 - !add-element [element]: A command that responds to the user and adds the element to Firebase.
 - !view-elements: A command that responds to the user with all their Firebase elements.
 
