@@ -3,9 +3,6 @@
 // Require FS
 const fs = require('fs');
 
-// Import Config for Prefix
-const { prefix } = require('./config.json');
-
 // Discord.js
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -17,6 +14,14 @@ client.cooldowns = new Discord.Collection();
 // Dotenv Configuration
 const dotenv = require('dotenv');
 dotenv.config();
+
+// Import Config for Prefix
+let { prefix } = require('./config.json');
+
+// Development Environment - PREFIX
+if (process.env.NODE_ENV === 'dev') {
+    prefix = process.env.DEV_PREFIX;
+}
 
 // Firebase Configuration
 const firebaseConfiguration = require('./firebase-configuration/firebase');
