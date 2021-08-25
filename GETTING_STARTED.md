@@ -150,6 +150,7 @@ However, we only want the `SECRET` part. Carefully copy and paste each part into
 
 `.env`
 ```bash
+DEV_PREFIX=&
 TOKEN=YOUR_VERY_SECRET_BOT_TOKEN
 apiKey=SECRET
 authDomain=SECRET_LINK
@@ -184,16 +185,27 @@ Note: HighTechU Students working in a team will need to designate 1 team member 
 - [ ] Create a new Heroku Application.
 - [ ] Setup Deployment Method. Use the `Connect to GitHub` method and select the appropriate repository.
 - [ ] Setup Configuration Variables. Add the configuration variables in the `.env` file to Heroku. For more information, visit "[Config Vars - Using the Heroku Dashboard](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard)".
+
+---
+
+- [ ] Enable Automatic Deployments. For more information, visit "[Automatic deploys](https://devcenter.heroku.com/articles/github-integration#automatic-deploys)".
+- [ ] Deploy the `main` Branch Manually. For more information, visit "[Manual deploys](https://devcenter.heroku.com/articles/github-integration#manual-deploys)".
+
+---
+
 - [ ] Config Dynos. Turn off the `web` dyno and turn on the `worker` dyno.
 
 ![Dyno Example](./docs/images/dyno-config-example.png)
 
 Note: You will want to turn off the `worker` dyno when you are not using your Discord Bot. A free account has 550 free dyno hours each month, therefore use your hours appropriately.
 
-- [ ] Enable Automatic Deployments. For more information, visit "[Automatic deploys](https://devcenter.heroku.com/articles/github-integration#automatic-deploys)".
-- [ ] Deploy the `main` Branch Manually. For more information, visit "[Manual deploys](https://devcenter.heroku.com/articles/github-integration#manual-deploys)".
+---
 
-Note: The `worker` dyno will be re-deployed every time the `main` branch is updated. Therefore, check that your app runs locally before merging your working branch into the `main` branch.
+- [ ] Re-Deploy the `main` Branch. For more information, visit "[Manual deploys](https://devcenter.heroku.com/articles/github-integration#manual-deploys)".
+
+---
+
+> Note: The `worker` dyno will be re-deployed every time the `main` branch is updated. Therefore, check that your app runs locally before merging your working branch into the `main` branch.
 
 ## Locally Deploy
 
@@ -213,17 +225,17 @@ Note: HighTechU Students working in a team can share the Firebase configuration 
   npm run start
 ```
 
+You will now be able to interact with your bot locally! You can use the `!help` command to see a list of commands.
+
 ## Optional Configuration
 
 These are optional configurations that you can perform to customize your Discord Bot.
 
-### Prefix
+### Production Prefix
 
-You can update the prefix for interacting with your Discord Bot. Currently to interact with the Discord Bot you would type `!command`. However, you can instead configure the interaction to be `!bot command`. This is helpful if you have multiple Discord Bots in a server.
+You can update the prefix for interacting with your Discord Bot. Currently to interact with the Discord Bot you would type `!command`. However, you can instead configure the interaction to be `&command`.
 
-Note: HighTechU Students working in a team will want to change the Discord Bot prefix for each Bot in the server.
-
-### Step 1: Update the prefix in the `config.json` file.
+#### Step 1: Update the prefix in the `config.json` file.
 
 from
 
@@ -239,9 +251,33 @@ to
 ```bash
 # Prefix for Summoning your Discord Bot
 {
-  "prefix": "!bot "
+  "prefix": "&"
 }
 ```
+
+Note: Changing the prefix will not affect the bot's functionality. However, it will affect the way the bot interacts with the user. Editing the `config.json` file will modify the prefix for the bot (both locally and on Heroku). Therefore, you will need to re-deploy the bot to update the prefix.
+
+### Development Prefix
+
+You can update the prefix for interacting with your Discord Bot locally. This will only affect the bot locally. You will need to edit the `.env` file to update the prefix.
+
+#### Step 1: Update the prefix in the `.env` file.
+
+from
+
+```bash
+# Prefix for Summoning your Discord Bot
+DEV_PREFIX=&
+```
+
+to
+
+```bash
+# Prefix for Summoning your Discord Bot
+DEV_PREFIX=*
+```
+
+After editing the `.env` file, you will need to re-deploy the bot locally. However, you will need to run the `npm run start:dev` command to re-deploy the bot. The `npm run start:dev` command will run the bot locally with the development prefix.
 
 ## Deployment
 
@@ -255,7 +291,7 @@ Note: If you are using a free Heroku account with no credit card attached, you w
 
 To test your setup, you can run the command `!ping` on your server. The Discord Bot will respond `Pong!` if your setup was a success.
 
-Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `!new-prefix ping`.
+Note: If you change your Discord Bot prefix, the command will no longer be `!ping`, but instead `<new-prefix>ping`.
 
 > Note: This applies to both locally developed Discord Bot and Heroku developed Discord Bot.
 
@@ -275,8 +311,10 @@ The HighTechU Discord Bot has a few template commands...
 - !beep: A command that responds to the user and adds an emoji to their message.
 - !chart [YYYY-MM-DD]: A command that responds to the user and uses an external API and Discord Embed.
 - !hightechu: A command that responds to the user and uses Discord Embed.
+- !reminder: A command that reminds the user of their reminder every x minutes.
 - !help: A command to list all commands.
 - !reload: A command that reloads a command during local development.
+- !r: A command that reloads all commands during local development.
 - !add-element [element]: A command that responds to the user and adds the element to Firebase.
 - !view-elements: A command that responds to the user with all their Firebase elements.
 
